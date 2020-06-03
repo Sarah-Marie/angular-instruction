@@ -1,0 +1,22 @@
+<h1>My Resume</h1>
+<h3>Contact Info</h3>
+Name: {{ name }}<br>
+Address: {{ address }}<br>
+
+<button (click)="toggleWorkDisplay()">Display Work</button>
+<div>
+<h3>Work Experience</h3>
+
+<app-work-experience></app-work-experience>
+</div *ngIf='displayEdu'>
+<div>
+<h3>Education</h3>
+</div>
+<h3>Playground</h3>
+
+<!--simple one way binding--->
+
+Message: {{ message }}<br>
+
+// two way binding
+<input [(ngModel)]="message" type="text">

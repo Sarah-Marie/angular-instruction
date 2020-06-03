@@ -1,0 +1,8 @@
+<h1>Welcome to My Calculator!</h1>
+Enter Number 1: <input [(ngModel)]="number1" type="number"><br>
+Enter Number 2: <input [(ngModel)]="number2" type="number"><br>
+<button (click)='add()'> + </button>
+<button (click)='subtract()'> - </button>
+<button (click)='multiply()'> * </button>
+<button (click)='divide()'> / </button><br>
+Result: <input [(ngModel)]="result" type="number" readonly><br>
